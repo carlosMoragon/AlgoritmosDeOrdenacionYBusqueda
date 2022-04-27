@@ -1,6 +1,6 @@
 # AlgoritmosDeOrdenacionYBusqueda
 
-#####Por: Carlos Moragón.
+##### Por: Carlos Moragón.
 
 En este repositorio se encuentran los siguiente algoritmos de Ordenación:
 	- Burbuja.
