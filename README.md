@@ -3,6 +3,7 @@
 ##### Por: Carlos Moragón.
 
 En este repositorio se encuentran los siguiente algoritmos de Ordenación:
+
 	- Burbuja.
 	- MergeSort.
 	- Seleccion directa.
@@ -10,6 +11,7 @@ En este repositorio se encuentran los siguiente algoritmos de Ordenación:
 	- QuickSort.
 
 También tiene los siguientes algoritmos de busqueda:
+
 	- Busqueda Lineal.
 	- Busqueda Binaria.
 
