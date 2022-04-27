@@ -113,7 +113,7 @@ public class AnalisisEmpiricoOrdenacionYBusqueda {
 			return x;
 		};
 
-		Function<long[], long[]> inserccionDirecta = x -> {
+		Function<long[], long[]> insercionDirecta = x -> {
 			long carta = 0;
 			int j = 0;
 			for (int i = 1; i < x.length; i++) {
@@ -144,7 +144,7 @@ public class AnalisisEmpiricoOrdenacionYBusqueda {
 			int der = x.length - 1;
 			int mid = 0;
 			while (izq <= der) {
-				mid = (der - izq) / 2;
+				mid = (der + izq) / 2;
 				if (x[mid] < y) {
 					izq = mid + 1;
 				} else if (x[mid] > y) {
@@ -203,20 +203,6 @@ public class AnalisisEmpiricoOrdenacionYBusqueda {
 			//              System.out.println("ordenado: "+Arrays.toString(resultado));
 			out.println();
 
-			/*System.out.println("QuickSort");
-			  resultado=Analizador.analiza(JuegoPruebasAleatorio[i],QuickSort,out);
-			//             System.out.println("aleatorio: "+Arrays.toString(JuegoPruebasAleatorio[i]));
-			//             System.out.println("ordenado: "+Arrays.toString(resultado));
-
-			resultado=Analizador.analiza(JuegoPruebasOrdenado[i],QuickSort,out);
-			//             System.out.println("ya ordenado: "+Arrays.toString(JuegoPruebasOrdenado[i]));
-			//             System.out.println("ordenado: "+Arrays.toString(resultado));
-
-			resultado=Analizador.analiza(JuegoPruebasInverso[i],QuickSort,out);
-			//            System.out.println("inverso: "+Arrays.toString(JuegoPruebasInverso[i]));
-			//            System.out.println("ordenado: "+Arrays.toString(resultado));
-			out.println();*/
-
 			System.out.println("MergeSort");
 			resultado=Analizador.analiza(JuegoPruebasAleatorio[i],MergeSort,out);
 			//            System.out.println("aleatorio: "+Arrays.toString(JuegoPruebasAleatorio[i]));
@@ -246,7 +232,7 @@ public class AnalisisEmpiricoOrdenacionYBusqueda {
 			out.println();
 
 
-			System.out.println("Insercción directa");
+			System.out.println("Inserción directa");
 			resultado=Analizador.analiza(JuegoPruebasAleatorio[i],inserccionDirecta,out);
 			//            System.out.println("aleatorio: "+Arrays.toString(JuegoPruebasAleatorio[i]));
 			//            System.out.println("ordenado: "+Arrays.toString(resultado));
